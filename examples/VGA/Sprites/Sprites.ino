@@ -90,7 +90,9 @@ void setup()
 {
   //Serial.begin(115200); delay(500); Serial.write("\n\n\n"); // DEBUG ONLY
 
+  DisplayController.begin(GPIO_NUM_22, GPIO_NUM_21, GPIO_NUM_19, GPIO_NUM_18, GPIO_NUM_5, GPIO_NUM_4, GPIO_NUM_23, GPIO_NUM_15);
   DisplayController.begin();
+
   DisplayController.setResolution(VGA_320x200_75Hz);
 
   // draw background
